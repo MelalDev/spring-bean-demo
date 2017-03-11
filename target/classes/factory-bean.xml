@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+
+	<bean id="calendarBean" class="java.util.Calendar" factory-method="getInstance" />
+
+	<bean id="beanG" class="com.md.factory.BeanG">
+		<constructor-arg ref="calendarBean" />
+	</bean>
+	
+	<bean  id="customFactory" class="com.md.factory.CustomFactory" />
+	<bean id="beanA" factory-bean="customFactory" factory-method="getBeanAInstance"  />
+	
+</beans>
