@@ -12,6 +12,8 @@
 		<config>src/main/resources/namespace-bean.xml</config>
 		<config>src/main/resources/factory-bean.xml</config>
 		<config>src/main/resources/scope-bean.xml</config>
+		<config>src/main/resources/set.bean.xml</config>
+		<config>src/main/resources/auto-bean.xml</config>
 	</configs>
 	<autoconfigs>
 	</autoconfigs>

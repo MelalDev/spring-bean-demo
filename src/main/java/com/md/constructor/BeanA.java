@@ -12,7 +12,9 @@ public class BeanA {
 	}
 	
 	
-	
+	public void test1(){
+		
+	}
 	
 	
 }

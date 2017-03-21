@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+	<bean id="beanA" class="com.md.collection.ObjectA" />
+	<bean id="bean" class="com.md.collection.Bean">
+		<property name="list">
+			<list>
+			<bean class="com.md.collection.ObjectA" />
+			<ref bean="beanA" />
+			</list>
+		</property>
+		<property name="set">
+			<set>
+				<value>mary</value>
+				<value>sam</value>
+				<value>bob</value>
+				<value>jack</value>
+			</set>
+		</property>
+		<property name="map">
+			<map>
+				<entry key="a" value="aaaa" />
+				<entry key="b" value="bbbb" />
+				<entry key="c" value="cccc" />
+			</map>
+		</property>
+		<property name="properties">
+			<props>
+				<prop key="a">AAAA</prop>
+				<prop key="b">BBBB</prop>
+			</props>
+		</property>
+	</bean>
+
+</beans>

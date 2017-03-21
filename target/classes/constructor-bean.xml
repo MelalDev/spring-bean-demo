@@ -7,5 +7,5 @@
 	<bean id="beanA" class="com.md.constructor.BeanA">
 		<constructor-arg name="beanB" ref="beanB" />
 	</bean>
-
+	
 </beans>
