@@ -13,6 +13,7 @@ public class FactoryApp {
 		System.out.println(beanG.getYear());
 		
 		BeanA beanA = context.getBean(BeanA.class);
+		((ClassPathXmlApplicationContext)context).close();
 	}
 
 }

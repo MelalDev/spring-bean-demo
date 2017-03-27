@@ -10,7 +10,7 @@ public class AutoApp {
 		ObjectA objectA = context.getBean("objectA",ObjectA.class);
 		
 		ObjectC objectC = context.getBean("objectC",ObjectC.class);
-
+		((ClassPathXmlApplicationContext)context).close();
 	}
 
 }

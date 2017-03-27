@@ -28,6 +28,7 @@ public class CollectionApp {
 		for (	Object	token : bean.getProperties().keySet()) {
 			System.out.println(bean.getProperties().getProperty((String)token));
 		}
+		((ClassPathXmlApplicationContext)context).close();
 	}
 
 }

@@ -12,6 +12,7 @@ public class ScopeApp {
 		Prototype proto2 = context.getBean(Prototype.class);
 		
 		System.out.println(proto1==proto2);
+		((ClassPathXmlApplicationContext)context).close();
 	}
 
 }

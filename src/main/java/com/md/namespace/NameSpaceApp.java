@@ -12,6 +12,7 @@ public class NameSpaceApp {
 		BeanE beanE = context.getBean(BeanE.class);
 		System.out.println(beanE.getAge());
 		beanE.getBeanF().execute();
+		((ClassPathXmlApplicationContext)context).close();
 	}
 
 }
